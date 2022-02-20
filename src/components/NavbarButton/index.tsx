@@ -1,9 +1,17 @@
-import { Link, ListItem } from "@chakra-ui/react";
+import { Button, Link, ListItem } from "@chakra-ui/react";
 
 const NavbarButton = ({ target, title }) => {
   return (
     <ListItem>
-      <Link href={`/${target}`}>{title}</Link>
+      <Link href={`/${target}`}>
+        {title === "Download Resume" ? (
+          <Button bgColor="purpleColor.100" w="100%" color="white">
+            {title}
+          </Button>
+        ) : (
+          title
+        )}
+      </Link>
     </ListItem>
   );
 };
