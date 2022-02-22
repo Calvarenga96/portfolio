@@ -10,6 +10,7 @@ const Logo = () => {
       color="white"
       display="flex"
       variant="page-title"
+      sx={{ "user-select": "none" }}
     >
       {"<Christian Alvarenga />"}
     </Heading>

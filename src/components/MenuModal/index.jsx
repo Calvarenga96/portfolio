@@ -42,6 +42,7 @@ const MenuModal = () => {
           border="1px"
           borderColor="white"
           bg="backgroundColorBody"
+          w={["90%", "80%", "70%"]}
         >
           <ModalHeader
             w="100%"

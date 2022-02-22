@@ -25,13 +25,10 @@ const Header = () => {
     <Box
       as="header"
       w="100%"
-      py={["30px", "20px", "20px", "20px"]}
+      py={["30px", "20px", "20px"]}
       position="fixed"
       bgColor="backgroundColorHeader"
-      sx={{
-        "backdrop-filter": "blur(13.4px)",
-        "box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)",
-      }}
+      backdropFilter="blur(13.4px)"
       zIndex={1}
     >
       <Container
