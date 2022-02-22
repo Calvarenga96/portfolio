@@ -4,13 +4,15 @@ import { Flex } from "@chakra-ui/react";
 const HamburgerMenu = () => {
   return (
     <Flex
-      p={3}
+      p={2}
       justifyContent="center"
       alignItems="center"
-      rounded="xl"
-      bgColor="turquoiseColor.100"
+      rounded="lg"
+      bgColor="transparent"
+      border="1px"
+      borderColor="white"
     >
-      <HamburgerIcon w={5} h={5} color="white" />
+      <HamburgerIcon w={4} h={4} color="white" />
     </Flex>
   );
 };

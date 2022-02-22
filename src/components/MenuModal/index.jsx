@@ -7,6 +7,8 @@ import {
   ModalBody,
   ModalCloseButton,
   ModalContent,
+  ModalHeader,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useContext, useEffect, useState } from "react";
@@ -36,22 +38,37 @@ const MenuModal = () => {
         {overlay}
         <ModalContent
           display="flex"
-          border="2px"
-          borderColor="gradient.turquoisePurpleColor"
           borderRadius="10px"
+          border="1px"
+          borderColor="white"
+          bg="backgroundColorBody"
         >
-          <ModalCloseButton onClick={handleClick} mb={5} />
+          <ModalHeader
+            w="100%"
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Text as="span" color="white">
+              Where do you want to go?
+            </Text>
+            <ModalCloseButton
+              onClick={handleClick}
+              color="white"
+              position="static"
+            />
+          </ModalHeader>
           <ModalBody p={5}>
             <HStack>
               <List w="100%">
                 <NavbarButton target="" title="Home" />
-                <Divider h="2px" bgColor="gray.700" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="about-me" title="About Me" />
-                <Divider h="2px" bgColor="gray.700" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="experience" title="Experience" />
-                <Divider h="2px" bgColor="gray.700" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="projects" title="Projects" />
-                <Divider h="2px" bgColor="gray.700" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="resume" title="Download Resume" />
               </List>
             </HStack>

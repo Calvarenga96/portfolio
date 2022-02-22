@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 
 const Footer = () => {
-  return <Text>Footer</Text>;
+  return <Text></Text>;
 };
 
 export default Footer;

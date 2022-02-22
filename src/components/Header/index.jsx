@@ -1,5 +1,7 @@
+import { Box, Container, Link } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import getViewportWidth from "../../helpers/getViewportWidth";
+import Logo from "../Logo";
 import NormalNavbar from "../NormalNavbar";
 import ResponsiveNavbar from "../ResponsiveNavbar";
 
@@ -20,9 +22,31 @@ const Header = () => {
   }, []);
 
   return (
-    <header w="100%" p={["sm", "md", "lg"]}>
-      <nav>{responsive ? <ResponsiveNavbar /> : <NormalNavbar />}</nav>
-    </header>
+    <Box
+      as="header"
+      w="100%"
+      py={["30px", "20px", "20px", "20px"]}
+      position="fixed"
+      bgColor="backgroundColorHeader"
+      sx={{
+        "backdrop-filter": "blur(13.4px)",
+        "box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)",
+      }}
+      zIndex={1}
+    >
+      <Container
+        as="nav"
+        maxW="2xl"
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Link href="/">
+          <Logo />
+        </Link>
+        {responsive ? <ResponsiveNavbar /> : <NormalNavbar />}
+      </Container>
+    </Box>
   );
 };
 

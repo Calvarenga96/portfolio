@@ -1,5 +1,6 @@
 export default {
-  backgroundColor: "#1a1a1a",
+  backgroundColorBody: "#1a1a1a",
+  backgroundColorHeader: "rgba(26, 26, 26, 0.35)",
   whiteColor: "#ffffff",
   purpleColor: {
     100: "#a2e",
@@ -19,5 +20,9 @@ export default {
       "linear-gradient(90deg, rgba(170,34,238,1) 0%, rgba(185,15,255,1) 50%, rgba(8,255,244,1) 100%)",
     turquoiseColor:
       "linear-gradient(90deg, rgba(34,100,238,1) 0%, rgba(15,190,255,1) 50%, rgba(8,255,244,1) 100%)",
+  },
+  backgroundGradient: {
+    purpleColor:
+      "linear(to-r, rgba(170,34,238,1), rgba(185,15,255,1), rgba(136,8,255,1) 100%))",
   },
 };

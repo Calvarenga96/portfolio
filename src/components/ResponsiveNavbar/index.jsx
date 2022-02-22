@@ -13,7 +13,7 @@ const ResponsiveNavbar = () => {
 
   return (
     <Box>
-      <Box onClick={handleClick} position="fixed" bottom="30px" right="30px">
+      <Box onClick={handleClick}>
         <HamburguerMenu />
       </Box>
       {openModal && <MenuModal />}

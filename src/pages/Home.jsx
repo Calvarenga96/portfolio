@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 const Home = () => {
   return (
-    <VStack w="100%" h="100vh" bgColor="backgroundColor" color="whiteColor">
+    <VStack w="100%">
       <Header />
       <Main />
       <Footer />

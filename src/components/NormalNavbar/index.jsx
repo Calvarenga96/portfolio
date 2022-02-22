@@ -5,7 +5,6 @@ const NormalNavbar = () => {
   return (
     <List>
       <HStack>
-        <NavbarButton target="" title="Home" />
         <NavbarButton target="about-me" title="About Me" />
         <NavbarButton target="experience" title="Experience" />
         <NavbarButton target="projects" title="Projects" />
