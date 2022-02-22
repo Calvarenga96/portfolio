@@ -11,7 +11,7 @@ import { useRef } from "react";
 
 export default function Grogu({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("../../../grogu.gltf");
+  const { nodes, materials } = useGLTF("/grogu.gltf");
 
   return (
     <group ref={group} {...props} dispose={null}>
