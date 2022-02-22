@@ -1,4 +1,5 @@
 import { Box, Container, Image, Text } from "@chakra-ui/react";
+import Hand from "../../../resources/svg/hand_2.svg";
 
 const Main = () => {
   return (
@@ -18,7 +19,7 @@ const Main = () => {
           </Text>
         </Box>
         <Image
-          src="../../../resources/svg/hand_2.svg"
+          src={Hand}
           w={["120px", "200px", "270px"]}
           h={["120px", "200px", "270px"]}
           sx={{ transform: "rotate(20deg)" }}
