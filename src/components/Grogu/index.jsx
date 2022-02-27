@@ -15,8 +15,12 @@ export default function Grogu({ ...props }) {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
-        <group rotation={[Math.PI / 2, 0, 0]} scale={10}>
+      <group rotation={[-Math.PI / 2.7, 0, 0]} scale={0.01}>
+        <group
+          rotation={[Math.PI / 2, 0, 0]}
+          scale={10}
+          style={{ position: "relative", top: "20px" }}
+        >
           <group rotation={[-Math.PI / 2, 0, 0]}>
             <mesh
               geometry={nodes.BY_fur_fur_0.geometry}
