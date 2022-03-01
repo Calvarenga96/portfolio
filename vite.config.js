@@ -5,8 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "./build",
+    chunkSizeWarningLimit: 2500,
   },
   assetsInclude: ["**/*.gltf"],
-  chunkSizeWarningLimit: 2500,
 });
