@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 2500,
     manifest: true,
+    assetsDir: "./",
   },
-  assetsInclude: ["**/grogu.gltf"],
+  assetsInclude: ["**/*.gltf"],
 });

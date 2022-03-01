@@ -8,10 +8,11 @@ title: Mandalorian - Grogu ( The force )
 
 import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
+import GroguGLTF from "/grogu.gltf";
 
 export default function Grogu({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/grogu.gltf");
+  const { nodes, materials } = useGLTF(GroguGLTF);
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -98,4 +99,4 @@ export default function Grogu({ ...props }) {
   );
 }
 
-useGLTF.preload("/grogu.gltf");
+useGLTF.preload(GroguGLTF);
