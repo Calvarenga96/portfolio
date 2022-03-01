@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 2500,
+    manifest: true,
   },
-  assetsInclude: ["**/*.gltf"],
+  assetsInclude: ["**/grogu.gltf"],
 });
