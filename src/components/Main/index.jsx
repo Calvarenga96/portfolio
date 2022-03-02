@@ -1,4 +1,4 @@
-import { Box, Container, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import GroguLoading from "../GroguLoading";
 import GroguSection from "../GroguSection";
@@ -29,9 +29,28 @@ const Main = () => {
             as="h3"
             color="whiteColor"
             textAlign={["center", "left", "left"]}
+            fontSize={18}
           >
             Hi, I'm a Jr. Full-Stack developer based in Paraguay!
           </Text>
+        </Box>
+      </Box>
+      <Box
+        w="100%"
+        mt={10}
+        display="flex"
+        flexDirection={["column", "column", "row"]}
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Box>
+          <Heading color="whiteColor">Christian Alvarenga</Heading>
+          <Text as="span" color="whiteColor" fontSize={14}>
+            Passionate about the technological world
+          </Text>
+        </Box>
+        <Box>
+          <Image src="#" />
         </Box>
       </Box>
     </Container>

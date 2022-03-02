@@ -1,12 +1,10 @@
 :root {
-  --backgroundColor: #1a1a1a;
   --scrollbarColor: #00acff;
 }
 
 body.chakra-ui-light {
   width: 100%;
   height: 100%;
-  background: var(--backgroundColor);
 }
 
 ::-webkit-scrollbar {

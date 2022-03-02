@@ -1,6 +1,6 @@
 export default {
-  backgroundColorBody: "#1a1a1a",
-  backgroundColorHeader: "rgba(26, 26, 26, 0.35)",
+  backgroundColorBody: "#202023",
+  backgroundColorHeader: "rgba(32, 32, 35, 0.32)",
   whiteColor: "#ffffff",
   purpleColor: {
     100: "#a2e",

@@ -6,11 +6,11 @@ import Grogu from "../Grogu";
 
 const GroguSection = () => {
   return (
-    <Box h="200px">
+    <Box h="300px">
       <Canvas>
         <OrbitControls enableZoom={true} />
         <ambientLight intensity={0.5} />
-        <directionalLight position={[-2, 5, -2]} intensity={1} />
+        <directionalLight position={[2, 5, 2]} intensity={1} />
         <Suspense fallback={null}>
           <Grogu />
         </Suspense>
