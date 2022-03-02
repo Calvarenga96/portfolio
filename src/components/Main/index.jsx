@@ -1,21 +1,11 @@
 import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import GroguLoading from "../GroguLoading";
 import GroguSection from "../GroguSection";
 
 const Main = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
-
   return (
     <Container as="main">
       <Box mt={["100px", "100px", "calc(64px - 0.5rem)"]}>
-        {isLoading ? <GroguLoading /> : <GroguSection />}
+        <GroguSection />
         <Box
           bg="whiteAlpha.200"
           borderRadius="lg"

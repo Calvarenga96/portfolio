@@ -1,8 +1,8 @@
 import { Box, Spinner } from "@chakra-ui/react";
 
-const GroguLoading = () => {
+const Loading = () => {
   return (
-    <Box h="300px" display="flex" alignItems="center" justifyContent="center">
+    <Box display="flex" alignItems="center" justifyContent="center">
       <Spinner
         thickness="4px"
         speed="0.65s"
@@ -14,4 +14,4 @@ const GroguLoading = () => {
   );
 };
 
-export default GroguLoading;
+export default Loading;
