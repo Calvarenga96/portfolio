@@ -7,7 +7,6 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 2500,
     manifest: true,
-    assetsDir: "./",
   },
   assetsInclude: ["**/*.gltf"],
 });

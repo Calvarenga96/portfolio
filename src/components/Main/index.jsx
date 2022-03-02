@@ -1,12 +1,21 @@
-import { Box, Container, Image, Text } from "@chakra-ui/react";
-import Hand from "../../../resources/svg/hand_2.svg";
+import { Box, Container, Text } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import GroguLoading from "../GroguLoading";
 import GroguSection from "../GroguSection";
 
 const Main = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <Container as="main">
       <Box mt={["100px", "100px", "calc(64px - 0.5rem)"]}>
-        <GroguSection />
+        {isLoading ? <GroguLoading /> : <GroguSection />}
         <Box
           bg="whiteAlpha.200"
           borderRadius="lg"
@@ -16,19 +25,14 @@ const Main = () => {
           alignItems="center"
           justifyContent="center"
         >
-          <Text as="h3" color="white">
-            Hi, I&apos;m a Jr. Front-End developer based in Paraguay!
+          <Text
+            as="h3"
+            color="whiteColor"
+            textAlign={["center", "left", "left"]}
+          >
+            Hi, I'm a Jr. Full-Stack developer based in Paraguay!
           </Text>
         </Box>
-        <Image
-          src={Hand}
-          position="relative"
-          sx={{ transform: "rotate(20deg)" }}
-          w={["120px", "200px", "270px"]}
-          h={["120px", "200px", "270px"]}
-          top={["-35px", "-50px", "-90px"]}
-          left={["60%", "-50px", "340px"]}
-        />
       </Box>
     </Container>
   );
