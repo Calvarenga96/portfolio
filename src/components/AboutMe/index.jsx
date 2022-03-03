@@ -31,10 +31,10 @@ const AboutMe = () => {
       </Box>
       <Box my={[0, 0, 5]}>
         <Text color="whiteColor">
-          I was born in the city of Asunción in 1996. I became interested in
+          I was born in the city of Asuncion in 1996. I was interested in
           technology from an early age thanks to the influence of my parents,
-          but it was not until 2020 that I really began to study on online
-          platforms such as{" "}
+          but it wasn't until 2020, that I really started studying in online
+          platforms like{" "}
           <Link
             href="https://platzi.com/p/Calvarenga96/"
             isExternal={true}
@@ -50,9 +50,10 @@ const AboutMe = () => {
           >
             Udemy
           </Link>{" "}
-          to enter the world of programming. Before, he had studied other areas
-          such as Graphic Design and Digital Marketing. Currently I have started
-          studying{" "}
+          to enter the world of programming. Before that, I had studied other
+          areas such as Graphic Design and Digital Marketing, and while they may
+          have been fun to learn, they didn't manage to grab me like
+          programming. Currently, I started studying{" "}
           <Link
             href="https://www.uaa.edu.py/carreras/ingenieria-informatica-ciencias-computacion"
             isExternal={true}
@@ -61,6 +62,11 @@ const AboutMe = () => {
             Computer Engineering at the Autonomous University of Asunción
           </Link>
           .
+        </Text>
+        <Text color="whiteColor">
+          I am a person who believes that education is the key to achieve most
+          of life's purposes, that's why I am always in constant learning and
+          evolution.
         </Text>
       </Box>
     </Box>
