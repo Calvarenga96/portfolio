@@ -50,9 +50,9 @@ const AboutMe = () => {
           >
             Udemy
           </Link>{" "}
-          to enter the world of technology. programming. Before, he had studied
-          other areas such as Graphic Design and Digital Marketing. Currently I
-          have started studying{" "}
+          to enter the world of programming. Before, he had studied other areas
+          such as Graphic Design and Digital Marketing. Currently I have started
+          studying{" "}
           <Link
             href="https://www.uaa.edu.py/carreras/ingenieria-informatica-ciencias-computacion"
             isExternal={true}
