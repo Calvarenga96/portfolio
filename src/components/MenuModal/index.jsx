@@ -1,6 +1,7 @@
 import {
   Box,
   Divider,
+  Heading,
   HStack,
   List,
   Modal,
@@ -8,7 +9,6 @@ import {
   ModalCloseButton,
   ModalContent,
   ModalHeader,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useContext, useEffect, useState } from "react";
@@ -50,21 +50,20 @@ const MenuModal = () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <Text as="span" color="white">
+            <Heading color="white" fontSize={["md", "xl"]}>
               Where do you want to go?
-            </Text>
+            </Heading>
             <ModalCloseButton
               onClick={handleClick}
               color="white"
               position="static"
+              justifyContent="flex-end"
             />
           </ModalHeader>
           <ModalBody p={5}>
             <HStack>
               <List w="100%">
                 <NavbarButton target="" title="Home" />
-                <Divider h="2px" bgColor="white" w="100%" mb={2} />
-                <NavbarButton target="about-me" title="About Me" />
                 <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="experience" title="Experience" />
                 <Divider h="2px" bgColor="white" w="100%" mb={2} />

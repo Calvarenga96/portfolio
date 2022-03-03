@@ -1,10 +1,11 @@
-import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
+import AboutMe from "../AboutMe";
 import GroguSection from "../GroguSection";
 
 const Main = () => {
   return (
     <Container as="main">
-      <Box mt={["100px", "100px", "calc(64px - 0.5rem)"]}>
+      <Box mt="100px">
         <GroguSection />
         <Box
           bg="whiteAlpha.200"
@@ -25,24 +26,7 @@ const Main = () => {
           </Text>
         </Box>
       </Box>
-      <Box
-        w="100%"
-        mt={10}
-        display="flex"
-        flexDirection={["column", "column", "row"]}
-        justifyContent="space-between"
-        alignItems="center"
-      >
-        <Box>
-          <Heading color="whiteColor">Christian Alvarenga</Heading>
-          <Text as="span" color="whiteColor" fontSize={14}>
-            Passionate about the technological world
-          </Text>
-        </Box>
-        <Box>
-          <Image src="#" />
-        </Box>
-      </Box>
+      <AboutMe />
     </Container>
   );
 };

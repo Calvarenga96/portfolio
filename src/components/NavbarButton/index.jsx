@@ -9,9 +9,8 @@ const NavbarButton = ({ target, title }) => {
             bgColor="purpleColor.300"
             w="100%"
             color="whiteColor"
-            _hover={{
-              background: "purpleColor.100",
-            }}
+            _hover={{ bgColor: "purpleColor.100" }}
+            size="sm"
           >
             {title}
           </Button>

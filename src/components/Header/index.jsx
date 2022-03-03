@@ -1,31 +1,17 @@
 import { Box, Container, Link } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import getViewportWidth from "../../helpers/getViewportWidth";
+import useResponsive from "../../hooks/useResponsive";
 import Logo from "../Logo";
 import NormalNavbar from "../NormalNavbar";
 import ResponsiveNavbar from "../ResponsiveNavbar";
 
 const Header = () => {
-  const [responsive, setResponsive] = useState();
-  const BREAKPOINT = 1024;
-
-  useEffect(() => {
-    getViewportWidth() <= BREAKPOINT
-      ? setResponsive(true)
-      : setResponsive(false);
-
-    window.addEventListener("resize", () => {
-      getViewportWidth() <= BREAKPOINT
-        ? setResponsive(true)
-        : setResponsive(false);
-    });
-  }, []);
+  const { responsive } = useResponsive();
 
   return (
     <Box
       as="header"
       w="100%"
-      py={["30px", "20px", "20px"]}
+      py="20px"
       position="fixed"
       bgColor="backgroundColorHeader"
       backdropFilter="blur(13.4px)"
