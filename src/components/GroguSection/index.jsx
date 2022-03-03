@@ -1,9 +1,9 @@
 import { Box } from "@chakra-ui/react";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import Grogu from "../Grogu";
+import { lazy, Suspense } from "react";
 import Loading from "../Loading";
+const Grogu = lazy(() => import("../Grogu"));
 
 const GroguSection = () => {
   return (
