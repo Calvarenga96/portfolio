@@ -57,7 +57,8 @@ const MenuModal = () => {
               onClick={handleClick}
               color="white"
               position="static"
-              justifyContent="flex-end"
+              w="max-content"
+              h="max-content"
             />
           </ModalHeader>
           <ModalBody p={5}>
