@@ -10,6 +10,7 @@ const GroguSection = () => {
     <Box
       h="300px"
       mb={10}
+      mt="72px"
       display="flex"
       justifyContent="center"
       alignItems="center"
