@@ -1,9 +1,10 @@
-import { Button, Link, ListItem } from "@chakra-ui/react";
+import { Button, ListItem } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
-const NavbarButton = ({ target, title }) => {
+const NavbarButton = ({ title, target }) => {
   return (
-    <ListItem>
-      <Link href={`/${target}`} color={"whiteColor"}>
+    <ListItem color="whiteColor">
+      <Link to={target === "" ? "/" : `/${target}`}>
         {title === "Download Resume" ? (
           <Button
             bgColor="purpleColor.300"

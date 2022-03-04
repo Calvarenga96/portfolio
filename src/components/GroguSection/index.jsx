@@ -3,6 +3,7 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { lazy, Suspense } from "react";
 import Loading from "../Loading";
+
 const Grogu = lazy(() => import("../Grogu"));
 
 const GroguSection = () => {

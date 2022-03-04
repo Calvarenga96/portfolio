@@ -70,7 +70,7 @@ const MenuModal = () => {
                 <Divider h="2px" bgColor="white" w="100%" mb={2} />
                 <NavbarButton target="projects" title="Projects" />
                 <Divider h="2px" bgColor="white" w="100%" mb={2} />
-                <NavbarButton target="resume" title="Download Resume" />
+                <NavbarButton title="Download Resume" />
               </List>
             </HStack>
           </ModalBody>

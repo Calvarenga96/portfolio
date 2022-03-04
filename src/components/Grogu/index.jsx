@@ -1,7 +1,7 @@
 import { Center } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import GroguGLTF from "../../../resources/grogu.gltf";
+import GroguGLTF from "../../../assets/models/grogu.gltf";
 
 const Grogu = () => {
   const result = useLoader(GLTFLoader, GroguGLTF);

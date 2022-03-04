@@ -1,4 +1,4 @@
-import { Box, Container, Link } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import useResponsive from "../../hooks/useResponsive";
 import Logo from "../Logo";
 import NormalNavbar from "../NormalNavbar";
@@ -24,9 +24,7 @@ const Header = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Link href="/">
-          <Logo />
-        </Link>
+        <Logo />
         {responsive ? <ResponsiveNavbar /> : <NormalNavbar />}
       </Container>
     </Box>

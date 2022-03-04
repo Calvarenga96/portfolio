@@ -1,6 +1,11 @@
 import { Heading } from "@chakra-ui/react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { DataContext } from "../../context/DataContext";
 
 const Logo = () => {
+  const { section } = useContext(DataContext);
+
   return (
     <Heading
       as="h2"
@@ -12,7 +17,9 @@ const Logo = () => {
       variant="page-title"
       sx={{ "user-select": "none" }}
     >
-      {"<Christian Alvarenga />"}
+      <Link to="/" _hover={{ textDecoration: "none" }}>
+        {"<Christian Alvarenga />"}
+      </Link>
     </Heading>
   );
 };

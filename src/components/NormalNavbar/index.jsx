@@ -8,7 +8,7 @@ const NormalNavbar = () => {
         <NavbarButton target="" title="Home" />
         <NavbarButton target="experience" title="Experience" />
         <NavbarButton target="projects" title="Projects" />
-        <NavbarButton target="resume" title="Download Resume" />
+        <NavbarButton title="Download Resume" />
       </HStack>
     </List>
   );

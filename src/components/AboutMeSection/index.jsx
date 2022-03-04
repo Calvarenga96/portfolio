@@ -1,7 +1,7 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 import Section from "../Section";
 
-const AboutMe = () => {
+const AboutMeSection = () => {
   return (
     <Box mt={[0, 0, 0]}>
       <Section title="About Me" />
@@ -54,4 +54,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMeSection;
