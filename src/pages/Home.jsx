@@ -1,8 +1,12 @@
-import { VStack } from "@chakra-ui/react";
+import { Container, VStack } from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
+import { Route, Routes } from "react-router-dom";
+import AboutMeSection from "../components/AboutMeSection";
+import ExperienceSection from "../components/ExperienceSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Main from "../components/Main";
+import ProjectsSection from "../components/ProjectsSection";
+import StaticSection from "../components/StaticSection";
 
 const Home = () => {
   return (
@@ -14,7 +18,14 @@ const Home = () => {
         />
       </Helmet>
       <Header />
-      <Main />
+      <Container as="main">
+        <StaticSection />
+        <Routes>
+          <Route path="/" element={<AboutMeSection />} />
+          <Route path="experience" element={<ExperienceSection />} />
+          <Route path="projects" element={<ProjectsSection />} />
+        </Routes>
+      </Container>
       <Footer />
     </VStack>
   );
