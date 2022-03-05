@@ -1,8 +1,6 @@
 import { Container, Text } from "@chakra-ui/react";
 
 const Footer = () => {
-  const ACTUAL_YEAR = new Date().getFullYear();
-
   return (
     <Container
       as="footer"
@@ -19,7 +17,6 @@ const Footer = () => {
         fontWeight="bold"
       >
         Made with ❤ from PY for the whole world.
-        <br />© {ACTUAL_YEAR} All rights reserved.
       </Text>
     </Container>
   );

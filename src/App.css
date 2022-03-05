@@ -1,5 +1,6 @@
 :root {
-  --scrollbarColor: #00acff;
+  --turquoiseColor: #00acff;
+  --background: #202023;
 }
 
 body.chakra-ui-light {
@@ -11,7 +12,11 @@ body.chakra-ui-light {
   width: 10px;
 }
 
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbarColor);
+  background: var(--turquoiseColor);
   border-radius: 10px;
 }

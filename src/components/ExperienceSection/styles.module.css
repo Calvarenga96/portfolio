@@ -1,0 +1,7 @@
+.link {
+  color: var(--turquoiseColor);
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -13,7 +13,7 @@ const NavbarButton = ({ title, target }) => {
   return (
     <ListItem color="whiteColor" onClick={handleClick}>
       <Box _hover={{ textDecoration: "underline" }}>
-        <Link to={`${target}`}>
+        <Link to={`/${target}`}>
           {title === "Download Resume" ? (
             <Button
               bgColor="purpleColor.300"

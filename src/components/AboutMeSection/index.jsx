@@ -27,7 +27,7 @@ const AboutMeSection = () => {
         to enter the world of programming, I also took an 8-month course at an
         institute in my country called{" "}
         <Link
-          href="https://www.idt.com.py/"
+          href="https://www.idt.com.py/curso/curso-de-programacion-con-php/"
           isExternal={true}
           color="turquoiseColor.100"
         >
