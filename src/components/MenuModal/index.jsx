@@ -34,7 +34,7 @@ const MenuModal = () => {
 
   return (
     <Box>
-      <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick={false}>
+      <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick={true}>
         {overlay}
         <ModalContent
           display="flex"
@@ -64,12 +64,12 @@ const MenuModal = () => {
           <ModalBody p={5}>
             <HStack>
               <List w="100%">
-                <NavbarButton target="" title="Home" />
-                <Divider h="2px" bgColor="white" w="100%" mb={2} />
+                <NavbarButton target="/" title="Home" />
+                <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <NavbarButton target="experience" title="Experience" />
-                <Divider h="2px" bgColor="white" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <NavbarButton target="projects" title="Projects" />
-                <Divider h="2px" bgColor="white" w="100%" mb={2} />
+                <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <NavbarButton title="Download Resume" />
               </List>
             </HStack>
