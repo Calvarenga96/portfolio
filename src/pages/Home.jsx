@@ -6,7 +6,7 @@ import Main from "../components/Main";
 
 const Home = () => {
   return (
-    <VStack w="100%" h="100%" bgColor="backgroundColorBody">
+    <VStack>
       <Helmet>
         <meta
           name="description"

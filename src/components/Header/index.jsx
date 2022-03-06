@@ -11,11 +11,13 @@ const Header = () => {
     <Box
       as="header"
       w="100%"
-      py="20px"
+      h="65px"
       position="fixed"
       bgColor="backgroundColorHeader"
       backdropFilter="blur(13.4px)"
       zIndex={1}
+      display="flex"
+      alignItems="center"
     >
       <Container
         as="nav"

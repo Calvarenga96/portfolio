@@ -1,14 +1,18 @@
-import { HStack, List } from "@chakra-ui/react";
+import { Box, HStack, List } from "@chakra-ui/react";
 import NavbarButton from "../NavbarButton";
+import RRSS from "../RRSS";
 
 const NormalNavbar = () => {
   return (
     <List>
-      <HStack>
+      <HStack justifyContent="center" alignItems="center">
         <NavbarButton target="" title="Home" />
         <NavbarButton target="experience" title="Experience" />
         <NavbarButton target="projects" title="Projects" />
-        <NavbarButton title="Download Resume" />
+        <Box as="span" mx="5px" color="whiteColor">
+          |
+        </Box>
+        <RRSS />
       </HStack>
     </List>
   );

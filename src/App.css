@@ -1,11 +1,13 @@
 :root {
   --turquoiseColor: #00acff;
   --background: #202023;
+  --purpleColor: #8808ff;
 }
 
 body.chakra-ui-light {
   width: 100%;
   height: 100%;
+  background-color: var(--background);
 }
 
 ::-webkit-scrollbar {
@@ -19,4 +21,8 @@ body.chakra-ui-light {
 ::-webkit-scrollbar-thumb {
   background: var(--turquoiseColor);
   border-radius: 10px;
+}
+
+::selection {
+  background: var(--purpleColor);
 }

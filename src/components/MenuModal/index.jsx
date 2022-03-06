@@ -15,6 +15,7 @@ import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../../context/DataContext";
 import BackgroundOverlay from "../BackgroundOverlay";
 import NavbarButton from "../NavbarButton";
+import RRSS from "../RRSS";
 
 const MenuModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -70,7 +71,9 @@ const MenuModal = () => {
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <NavbarButton target="projects" title="Projects" />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
-                <NavbarButton title="Download Resume" />
+                <Box display="flex" alignItems="center" justifyContent="center">
+                  <RRSS />
+                </Box>
               </List>
             </HStack>
           </ModalBody>
