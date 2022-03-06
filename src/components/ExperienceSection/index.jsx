@@ -52,6 +52,7 @@ const ExperienceSection = () => {
           section.
         </Text>
       </Box>
+
       <Box display="flex" mt={5}>
         <Kbd bgColor="purpleColor.100" color="whiteColor" h={5}>
           2022
