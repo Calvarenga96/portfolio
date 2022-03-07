@@ -12,7 +12,7 @@ const NormalNavbar = () => {
         <Box as="span" mx="5px" color="whiteColor">
           |
         </Box>
-        <RRSS />
+        <RRSS responsive={false} />
       </HStack>
     </List>
   );

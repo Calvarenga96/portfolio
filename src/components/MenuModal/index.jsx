@@ -9,34 +9,23 @@ import {
   ModalCloseButton,
   ModalContent,
   ModalHeader,
-  useDisclosure,
 } from "@chakra-ui/react";
-import { useContext, useEffect, useState } from "react";
-import { DataContext } from "../../context/DataContext";
-import BackgroundOverlay from "../BackgroundOverlay";
+import useModal from "../../hooks/useModal";
 import NavbarButton from "../NavbarButton";
 import RRSS from "../RRSS";
 
 const MenuModal = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [overlay, setOverlay] = useState(<BackgroundOverlay />);
-  const { openModal, setOpenModal } = useContext(DataContext);
-
-  const handleClick = () => {
-    setOpenModal(!openModal);
-  };
-
-  useEffect(() => {
-    if (openModal) {
-      setOverlay(<BackgroundOverlay />);
-      onOpen();
-    }
-  }, [openModal]);
+  const { isOpen, onClose, handleClick } = useModal();
 
   return (
     <Box>
-      <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick={true}>
-        {overlay}
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        closeOnOverlayClick={false}
+        motionPreset="slideInRight"
+        isCentered
+      >
         <ModalContent
           display="flex"
           borderRadius="10px"
@@ -72,7 +61,7 @@ const MenuModal = () => {
                 <NavbarButton target="projects" title="Projects" />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <Box display="flex" alignItems="center" justifyContent="center">
-                  <RRSS />
+                  <RRSS responsive={true} />
                 </Box>
               </List>
             </HStack>
