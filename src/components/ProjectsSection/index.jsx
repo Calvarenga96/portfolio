@@ -1,17 +1,20 @@
-import { Box, Wrap } from "@chakra-ui/react";
+import { Box, Center, Divider, Wrap } from "@chakra-ui/react";
 import Calculator from "../../../assets/img/calculator.png";
 import Portfolio from "../../../assets/img/portfolio.png";
+import useResponsive from "../../hooks/useResponsive";
 import Project from "../Project";
 import Section from "../Section";
 
 const ProjectsSection = () => {
+  const { responsive } = useResponsive();
+
   return (
-    <Box mt={[0, 0, 0]}>
+    <Box mt={0}>
       <Section title="Projects" />
-      <Wrap direction="row" justifyContent="center" mt={5}>
+      <Wrap direction="row" mt={5} spacing="15px" justify="center">
         <Project
           name="Portfolio"
-          src={Portfolio}
+          srcPath={Portfolio}
           link="https://github.com/Calvarenga96/portfolio"
           alt="My personal portfolio"
           technologies={[
@@ -24,9 +27,14 @@ const ProjectsSection = () => {
             "React Icons",
           ]}
         />
+        {responsive && (
+          <Center w="100%">
+            <Divider colorScheme="whiteColor" w="100%" h="5px" />
+          </Center>
+        )}
         <Project
           name="Splitter Calculator"
-          src={Calculator}
+          srcPath={Calculator}
           link="https://calvarenga96.github.io/splitter-calculator/"
           alt="Calculator project"
           technologies={["HTML5", "CSS3", "JavaScript", "Webpack"]}

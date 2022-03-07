@@ -8,24 +8,29 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import useResponsive from "../../hooks/useResponsive";
+import Loading from "../Loading";
 
-const Project = ({ name, link, alt, technologies, src }) => {
+const Project = ({ name, link, alt, technologies, srcPath }) => {
+  const { responsive } = useResponsive();
+
   return (
-    <WrapItem w="40%">
+    <WrapItem w={responsive ? "100%" : "45%"}>
       <Flex direction="column" rowGap="15px">
-        <Link href={link} isExternal>
+        <Link href={link} isExternal={true}>
           <Image
-            src={src}
+            src={srcPath}
             alt={alt}
             color="whiteColor"
-            borderRadius={5}
+            borderRadius={10}
             border="2px"
             borderColor="purpleColor.300"
             _hover={{ borderColor: "purpleColor.100" }}
+            fallbackSrc={Loading}
           />
         </Link>
         <Heading as="h3" color="whiteColor" size="md">
-          <Link href={link} isExternal>
+          <Link href={link} isExternal={true}>
             {name}
           </Link>
         </Heading>
@@ -35,10 +40,9 @@ const Project = ({ name, link, alt, technologies, src }) => {
         <Wrap>
           {technologies.map((technology) => {
             return (
-              <WrapItem>
+              <WrapItem key={technology}>
                 <Badge
                   variant="subtle"
-                  key={technology}
                   color="turquoiseColor.100"
                   w="max-content"
                   h="max-content"

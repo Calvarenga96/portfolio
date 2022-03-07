@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const ExperienceSection = () => {
   return (
-    <Box mt={[0, 0, 0]}>
+    <Box mt={0}>
       <Section title="Experience" />
       <Box display="flex" mt={5}>
         <Kbd bgColor="purpleColor.100" color="whiteColor" h={5}>
