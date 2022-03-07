@@ -16,7 +16,7 @@ const useModal = () => {
     }
   }, [openModal]);
 
-  return { isOpen, onClose, handleClick };
+  return { isOpen, onClose, handleClick, openModal };
 };
 
 export default useModal;

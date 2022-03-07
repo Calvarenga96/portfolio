@@ -1,4 +1,5 @@
-import { Box, Container, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import ProfilePicture from "../ProfilePicture";
 
 const Presentation = () => {
   return (
@@ -21,7 +22,7 @@ const Presentation = () => {
         </Text>
       </Box>
       <Box my={[5, 5, 0]} position={["static", "static", "relative"]} right={5}>
-        <Image src="#" atl="Profile Photo" />
+        <ProfilePicture />
       </Box>
     </Container>
   );

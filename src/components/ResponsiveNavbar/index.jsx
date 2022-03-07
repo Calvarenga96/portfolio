@@ -1,15 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import { useContext } from "react";
-import { DataContext } from "../../context/DataContext";
+import useModal from "../../hooks/useModal";
 import HamburguerMenu from "../HamburguerMenu";
 import MenuModal from "../MenuModal";
 
 const ResponsiveNavbar = () => {
-  const { openModal, setOpenModal } = useContext(DataContext);
-
-  const handleClick = () => {
-    setOpenModal(!openModal);
-  };
+  const { handleClick, openModal } = useModal();
 
   return (
     <Box>
