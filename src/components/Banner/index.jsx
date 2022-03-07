@@ -5,7 +5,7 @@ const Banner = () => {
     <Box
       bg="whiteAlpha.200"
       borderRadius="lg"
-      py={6}
+      py={4}
       px={[5, 3, 3]}
       mb={10}
       display="flex"
