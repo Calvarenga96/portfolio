@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
       rounded="lg"
       bgColor="transparent"
       border="1px"
-      borderColor="white"
+      borderColor="whiteColor"
     >
       <HamburgerIcon w={4} h={4} color="white" />
     </Flex>

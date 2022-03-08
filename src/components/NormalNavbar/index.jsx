@@ -1,4 +1,5 @@
-import { Box, HStack, List } from "@chakra-ui/react";
+import { Divider, HStack, List } from "@chakra-ui/react";
+import Language from "../Language";
 import NavbarButton from "../NavbarButton";
 import RRSS from "../RRSS";
 
@@ -9,10 +10,20 @@ const NormalNavbar = () => {
         <NavbarButton target="" title="Home" />
         <NavbarButton target="experience" title="Experience" />
         <NavbarButton target="projects" title="Projects" />
-        <Box as="span" mx="5px" color="whiteColor">
-          |
-        </Box>
+        <Divider
+          orientation="vertical"
+          colorScheme="whiteColor"
+          w="3px"
+          h="24px"
+        />
         <RRSS responsive={false} />
+        <Divider
+          orientation="vertical"
+          colorScheme="whiteColor"
+          w="3px"
+          h="24px"
+        />
+        <Language />
       </HStack>
     </List>
   );

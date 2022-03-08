@@ -9,7 +9,6 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import useResponsive from "../../hooks/useResponsive";
-import Loading from "../Loading";
 
 const Project = ({ name, link, alt, technologies, srcPath }) => {
   const { responsive } = useResponsive();
@@ -26,7 +25,6 @@ const Project = ({ name, link, alt, technologies, srcPath }) => {
             border="2px"
             borderColor="purpleColor.300"
             _hover={{ borderColor: "purpleColor.100" }}
-            fallbackSrc={Loading}
           />
         </Link>
         <Heading as="h3" color="whiteColor" size="md">

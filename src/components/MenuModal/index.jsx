@@ -11,6 +11,7 @@ import {
   ModalHeader,
 } from "@chakra-ui/react";
 import useModal from "../../hooks/useModal";
+import Language from "../Language";
 import NavbarButton from "../NavbarButton";
 import RRSS from "../RRSS";
 
@@ -30,7 +31,7 @@ const MenuModal = () => {
           display="flex"
           borderRadius="10px"
           border="1px"
-          borderColor="white"
+          borderColor="turquoiseColor.100"
           bg="backgroundColorBody"
           w={["90%", "80%", "70%"]}
         >
@@ -60,8 +61,13 @@ const MenuModal = () => {
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <NavbarButton target="projects" title="Projects" />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
-                <Box display="flex" alignItems="center" justifyContent="center">
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
                   <RRSS responsive={true} />
+                  <Language responsive={true} />
                 </Box>
               </List>
             </HStack>
