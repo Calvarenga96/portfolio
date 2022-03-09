@@ -24,7 +24,7 @@ const ExperienceSection = () => {
           </LinkRouter>
           {lang === "en"
             ? "section), after having learned for a long time the basics with HTML, CSS and JavaScript, starting with a calculator using POO. After that I started working on several real front-end projects creating landing pages like "
-            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript, comenzando con una calculadora usando POO. Después de eso  proyectos reales de front-end, creando páginas de aterrizaje páginas como"}
+            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript, comenzando con una calculadora usando POO. Después de eso  proyectos reales de front-end, creando landing pages como "}
           <Link
             href="https://www.marketingeducativo.com/"
             isExternal={true}
@@ -49,8 +49,8 @@ const ExperienceSection = () => {
             cursosdemkt.com
           </Link>{" "}
           {lang === "en"
-            ? "using mainly React and its ecosystem but, they are closed source. While I was working on the landing pages, at my local high school and online I was learning about PHP and SQL for the backend which is also in the "
-            : "utilizando principalmente React y su ecosistema pero, son de código cerrado. Mientras trabajaba en las páginas de aterrizaje, en mi instituto local y en línea estaba aprendiendo sobre PHP y SQL para el backend que también está en la sección de "}
+            ? "using mainly React and its ecosystem but, they are closed source. While I was working on the landing pages, at the institute and online I was learning about PHP and SQL for the backend which is also in the "
+            : "utilizando principalmente React y su ecosistema pero, son de código cerrado. Mientras trabajaba en landing pages, el instituto y en línea estaba aprendiendo sobre PHP y SQL para el backend que también está en la sección de "}
           <LinkRouter to="/projects" className={styles.link}>
             {lang === "en" ? "projects " : "proyectos. "}
           </LinkRouter>
