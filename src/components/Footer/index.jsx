@@ -1,6 +1,10 @@
 import { Container, Text } from "@chakra-ui/react";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
 const Footer = () => {
+  const { lang } = useContext(DataContext);
+
   return (
     <Container
       as="footer"
@@ -16,7 +20,9 @@ const Footer = () => {
         textAlign="center"
         fontWeight="bold"
       >
-        Made with ❤ from PY for the whole world.
+        {lang === "en"
+          ? "Made with ❤ from PY for the whole world."
+          : "Hecho con ❤ de PY para todo el mundo."}
       </Text>
     </Container>
   );

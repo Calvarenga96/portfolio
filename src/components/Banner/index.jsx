@@ -1,6 +1,10 @@
 import { Box, Text } from "@chakra-ui/react";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 
 const Banner = () => {
+  const { lang } = useContext(DataContext);
+
   return (
     <Box
       bg="whiteAlpha.200"
@@ -18,7 +22,9 @@ const Banner = () => {
         textAlign={["center", "left", "left"]}
         fontSize={18}
       >
-        Hi, I'm a Jr. Full-Stack developer based in Paraguay!
+        {lang === "en"
+          ? "Hi, I'm a Full-Stack Jr. developer from Paraguay!"
+          : "¡Hola, soy un desarrollador Full-Stack Jr. de Paraguay!"}
       </Text>
     </Box>
   );

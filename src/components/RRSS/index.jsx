@@ -1,17 +1,23 @@
 import { Box, Link, Tooltip } from "@chakra-ui/react";
+import { useContext } from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { DataContext } from "../../context/DataContext";
 
 const RRSS = ({ responsive }) => {
+  const { lang } = useContext(DataContext);
+
   return (
     <Box
       display="flex"
       position="column"
       alignItems="center"
       justifyContent="center"
-      columnGap="5px"
+      columnGap="3px"
     >
       <Tooltip
-        label="Visit my GitHub page"
+        label={
+          lang === "en" ? "Visit my GitHub page" : "Visita mi página de GitHub"
+        }
         placement="bottom"
         bg="turquoiseColor.100"
       >
@@ -25,7 +31,11 @@ const RRSS = ({ responsive }) => {
         </Link>
       </Tooltip>
       <Tooltip
-        label="Visit my LinkedIn page"
+        label={
+          lang === "en"
+            ? "Visit my LinkedIn page"
+            : "Visita mi página de LinkedIn"
+        }
         placement="bottom"
         bg="turquoiseColor.100"
       >

@@ -4,18 +4,15 @@ const DataContext = new createContext();
 
 const DataProvider = ({ children }) => {
   const [openModal, setOpenModal] = useState(false);
-  const [section, setSection] = useState("Home");
-  const [lang, setLan] = useState("en");
+  const [lang, setLang] = useState("en");
 
   return (
     <DataContext.Provider
       value={{
         openModal,
         setOpenModal,
-        section,
-        setSection,
         lang,
-        setLan,
+        setLang,
       }}
     >
       {children}

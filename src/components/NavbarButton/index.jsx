@@ -12,7 +12,7 @@ const NavbarButton = ({ title, target }) => {
 
   return (
     <ListItem color="whiteColor" onClick={handleClick}>
-      <Box _hover={{ textDecoration: "underline" }}>
+      <Box _hover={{ textDecoration: "underline", color: "purpleColor.100" }}>
         <Link to={target === "/" ? "/" : `/${target}`}>{title}</Link>
       </Box>
     </ListItem>

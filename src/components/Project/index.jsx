@@ -8,10 +8,13 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 import useResponsive from "../../hooks/useResponsive";
 
 const Project = ({ name, link, alt, technologies, srcPath }) => {
   const { responsive } = useResponsive();
+  const { lang } = useContext(DataContext);
 
   return (
     <WrapItem w={responsive ? "100%" : "45%"}>
@@ -33,7 +36,7 @@ const Project = ({ name, link, alt, technologies, srcPath }) => {
           </Link>
         </Heading>
         <Text color="whiteColor" fontWeight="600">
-          Technologies used
+          {lang === "en" ? "Technologies used" : "Tecnologías usadas"}
         </Text>
         <Wrap>
           {technologies.map((technology) => {

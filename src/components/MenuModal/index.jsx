@@ -10,6 +10,8 @@ import {
   ModalContent,
   ModalHeader,
 } from "@chakra-ui/react";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataContext";
 import useModal from "../../hooks/useModal";
 import Language from "../Language";
 import NavbarButton from "../NavbarButton";
@@ -17,6 +19,7 @@ import RRSS from "../RRSS";
 
 const MenuModal = () => {
   const { isOpen, onClose, handleClick } = useModal();
+  const { lang } = useContext(DataContext);
 
   return (
     <Box>
@@ -42,7 +45,9 @@ const MenuModal = () => {
             alignItems="center"
           >
             <Heading color="white" fontSize={["md", "xl"]}>
-              Where do you want to go?
+              {lang === "en"
+                ? "Where do you want to go?"
+                : "¿A dónde quieres ir?"}
             </Heading>
             <ModalCloseButton
               onClick={handleClick}
@@ -55,11 +60,20 @@ const MenuModal = () => {
           <ModalBody p={5}>
             <HStack>
               <List w="100%">
-                <NavbarButton target="/" title="Home" />
+                <NavbarButton
+                  target="/"
+                  title={lang === "en" ? "Home" : "Inicio"}
+                />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
-                <NavbarButton target="experience" title="Experience" />
+                <NavbarButton
+                  target="experience"
+                  title={lang === "en" ? "Experience" : "Experiencia"}
+                />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
-                <NavbarButton target="projects" title="Projects" />
+                <NavbarButton
+                  target="projects"
+                  title={lang === "en" ? "Projects" : "Proyectos"}
+                />
                 <Divider h="2px" bgColor="white" w="100%" mb={3} />
                 <Box
                   display="flex"

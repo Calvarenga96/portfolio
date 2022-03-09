@@ -26,6 +26,7 @@ const Language = ({ responsive }) => {
         px="0"
         border="2px"
         borderRadius={10}
+        minW="max-content"
         borderColor="turquoiseColor.100"
       >
         <MenuItem
@@ -34,6 +35,7 @@ const Language = ({ responsive }) => {
           borderTopRightRadius={10}
           color="whiteColor"
           bg="backgroundColorBody"
+          justifyContent="center"
           onClick={() => handleClick("en")}
         >
           English
@@ -44,6 +46,7 @@ const Language = ({ responsive }) => {
           borderBottomRightRadius={10}
           color="whiteColor"
           bg="backgroundColorBody"
+          justifyContent="center"
           onClick={() => handleClick("es")}
         >
           Español
