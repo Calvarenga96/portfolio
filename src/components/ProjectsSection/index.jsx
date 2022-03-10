@@ -1,4 +1,4 @@
-import { Box, Center, Divider, Wrap } from "@chakra-ui/react";
+import { Box, Center, Divider, Heading, Wrap } from "@chakra-ui/react";
 import { useContext } from "react";
 import Calculator from "../../../assets/img/calculator.png";
 import Portfolio from "../../../assets/img/portfolio.png";
@@ -45,6 +45,11 @@ const ProjectsSection = () => {
           technologies={["HTML5", "CSS3", "JavaScript", "Webpack"]}
         />
       </Wrap>
+      <Heading color="whiteColor" textAlign="center" fontSize="xl" mt={8}>
+        {lang === "en"
+          ? "I will upload more projects very soon... 🤓"
+          : "Muy pronto subiré más proyectos... 🤓"}
+      </Heading>
     </Box>
   );
 };

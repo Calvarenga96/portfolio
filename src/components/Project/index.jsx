@@ -11,16 +11,18 @@ import {
 import { useContext } from "react";
 import { DataContext } from "../../context/DataContext";
 import useResponsive from "../../hooks/useResponsive";
+import { motion } from "framer-motion";
 
 const Project = ({ name, link, alt, technologies, srcPath }) => {
   const { responsive } = useResponsive();
   const { lang } = useContext(DataContext);
+  const AnimateImage = motion(Image);
 
   return (
     <WrapItem w={responsive ? "100%" : "45%"}>
       <Flex direction="column" rowGap="15px">
         <Link href={link} isExternal={true}>
-          <Image
+          <AnimateImage
             src={srcPath}
             alt={alt}
             color="whiteColor"
@@ -28,6 +30,10 @@ const Project = ({ name, link, alt, technologies, srcPath }) => {
             border="2px"
             borderColor="purpleColor.300"
             _hover={{ borderColor: "purpleColor.100" }}
+            drag="x"
+            dragConstraints={{ left: -50, right: 100 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           />
         </Link>
         <Heading as="h3" color="whiteColor" size="md">
@@ -39,9 +45,9 @@ const Project = ({ name, link, alt, technologies, srcPath }) => {
           {lang === "en" ? "Technologies used" : "Tecnologías usadas"}
         </Text>
         <Wrap>
-          {technologies.map((technology) => {
+          {technologies.map((technology, index) => {
             return (
-              <WrapItem key={technology}>
+              <WrapItem key={`${technology}-${index}`}>
                 <Badge
                   variant="subtle"
                   color="turquoiseColor.100"

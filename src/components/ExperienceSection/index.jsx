@@ -23,8 +23,8 @@ const ExperienceSection = () => {
             {lang === "en" ? "projects " : "proyectos"}
           </LinkRouter>
           {lang === "en"
-            ? "section), after having learned for a long time the basics with HTML, CSS and JavaScript, starting with a calculator using POO. After that I started working on several real front-end projects creating landing pages like "
-            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript, comenzando con una calculadora usando POO. Después de eso  proyectos reales de front-end, creando landing pages como "}
+            ? "section), after having learned for a long time the basics with HTML, CSS and JavaScript, starting with a calculator using OOP. After that, I started working on several real front-end projects creating landing pages like "
+            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript, comenzando con una calculadora usando POO. Después de eso, empecé a trabajar en varios proyectos reales de front-end creando landing pages como "}
           <Link
             href="https://www.marketingeducativo.com/"
             isExternal={true}
@@ -66,8 +66,8 @@ const ExperienceSection = () => {
         </Kbd>
         <Text color="whiteColor" pl={3}>
           {lang === "en"
-            ? "I have finished another project made with Jquery for the Front-End and PHP and SQL for the Back-End. Then I will start developing a project with Laravel."
-            : "He terminado otro proyecto hecho con Jquery para el Front-End y PHP y SQL para el Back-End. Luego comenzaré a desarrollar un proyecto con Laravel."}
+            ? "Almost at the beginning of the year, I had finished another project using technologies like Jquery for the Front-End and PHP and SQL for the Back-End. Very soon, I will start my more in depth incursion with Laravel, creating a project of my own, which will be public in my GitHub repository."
+            : "Casi a comienzo de año, había terminado otro proyecto utilizando tecnologías como Jquery para el Front-End y PHP y SQL para el Back-End. Muy pronto, comenzaré mi incursión más a profundidad con Laravel, creando un proyecto propio, el cuál estará siendo público en mi repositorio de GitHub."}
         </Text>
       </Box>
     </Box>

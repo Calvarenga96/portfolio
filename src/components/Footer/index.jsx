@@ -21,8 +21,8 @@ const Footer = () => {
         fontWeight="bold"
       >
         {lang === "en"
-          ? "Made with ❤ from PY for the whole world."
-          : "Hecho con ❤ de PY para todo el mundo."}
+          ? "Made with ❤ from PY for everyone."
+          : "Hecho con ❤ desde PY para todo el mundo."}
       </Text>
     </Container>
   );
