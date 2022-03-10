@@ -1,19 +1,27 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useContext } from "react";
+import presentationAnimation from "../../animations/presentationAnimation";
 import { DataContext } from "../../context/DataContext";
 import ProfilePicture from "../ProfilePicture";
 
 const Presentation = () => {
   const { lang } = useContext(DataContext);
+  const AnimatedContainer = motion(Container);
 
   return (
-    <Container
+    <AnimatedContainer
       display="flex"
       flexDirection={["column", "column", "row"]}
       justifyContent="space-between"
       alignItems="center"
       w="100%"
       px="0"
+      variants={presentationAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 1 }}
     >
       <Box
         display="flex"
@@ -30,7 +38,7 @@ const Presentation = () => {
       <Box my={[5, 5, 0]} position={["static", "static", "relative"]} right={5}>
         <ProfilePicture />
       </Box>
-    </Container>
+    </AnimatedContainer>
   );
 };
 

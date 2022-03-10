@@ -1,7 +1,9 @@
 import { Box, Center, Divider, Heading, Wrap } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import Calculator from "../../../assets/img/calculator.png";
 import Portfolio from "../../../assets/img/portfolio.png";
+import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
 import useResponsive from "../../hooks/useResponsive";
 import Project from "../Project";
@@ -10,9 +12,17 @@ import Section from "../Section";
 const ProjectsSection = () => {
   const { responsive } = useResponsive();
   const { lang } = useContext(DataContext);
+  const AnimatedBox = motion(Box);
 
   return (
-    <Box mt={0}>
+    <AnimatedBox
+      variants={boxAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 1 }}
+      mt={0}
+    >
       <Section title={lang === "en" ? "Projects" : "Proyectos"} />
       <Wrap direction="row" mt={5} spacing="15px" justify="center">
         <Project
@@ -50,7 +60,7 @@ const ProjectsSection = () => {
           ? "I will upload more projects very soon... 🤓"
           : "Muy pronto subiré más proyectos... 🤓"}
       </Heading>
-    </Box>
+    </AnimatedBox>
   );
 };
 

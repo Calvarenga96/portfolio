@@ -1,13 +1,27 @@
 import { Box, Link, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useContext } from "react";
+import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
+import Banner from "../Banner";
+import Presentation from "../Presentation";
 import Section from "../Section";
 
 const AboutMeSection = () => {
   const { lang } = useContext(DataContext);
+  const BoxAnimated = motion(Box);
 
   return (
-    <Box mt={0}>
+    <BoxAnimated
+      variants={boxAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 1 }}
+      mt={0}
+    >
+      <Banner />
+      <Presentation />
       <Section title={lang === "en" ? "About Me" : "Sobre Mí"} />
       <Box mt={5}>
         <Text color="whiteColor">
@@ -66,7 +80,7 @@ const AboutMeSection = () => {
             : "Tengo otros intereses a parte de la programación, disfruto bastante de entrenar en el gimnasio 💪🏻, hacer caminatas 🏃🏻‍♂️, escuchar música 🎶 y además he estudiado, como hobby, para ser Dj 🎧."}
         </Text>
       </Box>
-    </Box>
+    </BoxAnimated>
   );
 };
 

@@ -1,15 +1,25 @@
 import { Box, Kbd, Link, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { Link as LinkRouter } from "react-router-dom";
+import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
 import Section from "../Section";
 import styles from "./styles.module.css";
 
 const ExperienceSection = () => {
   const { lang } = useContext(DataContext);
+  const AnimatedBox = motion(Box);
 
   return (
-    <Box mt={0}>
+    <AnimatedBox
+      variants={boxAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 1 }}
+      mt={0}
+    >
       <Section title={lang === "en" ? "Experience" : "Experiencia"} />
       <Box display="flex" mt={5}>
         <Kbd bgColor="purpleColor.100" color="whiteColor" h={5}>
@@ -70,7 +80,7 @@ const ExperienceSection = () => {
             : "Casi a comienzo de año, había terminado otro proyecto utilizando tecnologías como Jquery para el Front-End y PHP y SQL para el Back-End. Muy pronto, comenzaré mi incursión más a profundidad con Laravel, creando un proyecto propio, el cuál estará siendo público en mi repositorio de GitHub."}
         </Text>
       </Box>
-    </Box>
+    </AnimatedBox>
   );
 };
 
