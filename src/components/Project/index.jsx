@@ -2,7 +2,7 @@ import {
   Badge,
   Flex,
   Heading,
-  Image,
+  Img,
   Link,
   Text,
   Wrap,
@@ -16,7 +16,7 @@ import useResponsive from "../../hooks/useResponsive";
 const Project = ({ name, link, alt, technologies, srcPath }) => {
   const { responsive } = useResponsive();
   const { lang } = useContext(DataContext);
-  const AnimateImage = motion(Image);
+  const AnimateImage = motion(Img);
 
   return (
     <WrapItem w={responsive ? "100%" : "45%"}>
