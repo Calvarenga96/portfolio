@@ -8,10 +8,10 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { DataContext } from "../../context/DataContext";
 import useResponsive from "../../hooks/useResponsive";
-import { motion } from "framer-motion";
 
 const Project = ({ name, link, alt, technologies, srcPath }) => {
   const { responsive } = useResponsive();

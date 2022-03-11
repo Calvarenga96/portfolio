@@ -7,7 +7,7 @@ import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
 import useResponsive from "../../hooks/useResponsive";
 import Project from "../Project";
-import Section from "../Section";
+import Section from "../SectionBadge";
 
 const ProjectsSection = () => {
   const { responsive } = useResponsive();
@@ -54,6 +54,11 @@ const ProjectsSection = () => {
           alt={lang === "en" ? "Calculator project" : "Proyecto de calculadora"}
           technologies={["HTML5", "CSS3", "JavaScript", "Webpack"]}
         />
+        {responsive && (
+          <Center w="100%">
+            <Divider colorScheme="whiteColor" w="100%" h="5px" />
+          </Center>
+        )}
       </Wrap>
       <Heading color="whiteColor" textAlign="center" fontSize="xl" mt={8}>
         {lang === "en"

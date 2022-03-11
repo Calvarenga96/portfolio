@@ -5,7 +5,7 @@ import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
 import Banner from "../Banner";
 import Presentation from "../Presentation";
-import Section from "../Section";
+import Section from "../SectionBadge";
 
 const AboutMeSection = () => {
   const { lang } = useContext(DataContext);

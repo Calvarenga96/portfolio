@@ -1,4 +1,4 @@
-import { Box, MenuItem, MenuList } from "@chakra-ui/react";
+import { Box, Divider, MenuItem, MenuList } from "@chakra-ui/react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DataContext } from "../../context/DataContext";
@@ -9,14 +9,13 @@ const MenuResponsive = () => {
   const { lang } = useContext(DataContext);
 
   return (
-    <MenuList bg="backgroundColorBody" px={3}>
+    <MenuList bg="backgroundColorBody" px={3} boderColor="purpleColor.100">
       <Link to="/">
         <MenuItem
           color="whiteColor"
           bg="backgroundColorBody"
-          px="0"
-          pt="0"
-          pb={1}
+          my={2}
+          p="0"
           _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Home" : "Inicio"}
@@ -26,9 +25,8 @@ const MenuResponsive = () => {
         <MenuItem
           color="whiteColor"
           bg="backgroundColorBody"
-          px="0"
-          pt="0"
-          pb={1}
+          my={2}
+          p="0"
           _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Experience" : "Experiencia"}
@@ -38,15 +36,21 @@ const MenuResponsive = () => {
         <MenuItem
           color="whiteColor"
           bg="backgroundColorBody"
-          px="0"
-          pt="0"
-          pb={1}
+          my={2}
+          p="0"
           _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Projects" : "Proyectos"}
         </MenuItem>
       </Link>
-      <Box display="flex" alignItems="center" justifyContent="space-between">
+      <Divider />
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="space-between"
+        mt={3}
+        p="0"
+      >
         <RRSS responsive={true} />
         <Language responsive={true} />
       </Box>

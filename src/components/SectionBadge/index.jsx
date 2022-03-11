@@ -1,6 +1,6 @@
 import { Badge, Box, Heading } from "@chakra-ui/react";
 
-const Section = ({ title }) => {
+const SectionBadge = ({ title }) => {
   return (
     <Box>
       <Heading>
@@ -10,4 +10,4 @@ const Section = ({ title }) => {
   );
 };
 
-export default Section;
+export default SectionBadge;

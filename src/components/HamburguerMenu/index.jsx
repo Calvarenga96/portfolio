@@ -16,6 +16,7 @@ const HamburgerMenu = () => {
         color: "purpleColor.100",
         borderColor: "purpleColor.100",
       }}
+      _active={{ bg: "backgroundColorBody" }}
     />
   );
 };

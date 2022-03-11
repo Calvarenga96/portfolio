@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Link as LinkRouter } from "react-router-dom";
 import boxAnimation from "../../animations/boxAnimation";
 import { DataContext } from "../../context/DataContext";
-import Section from "../Section";
+import Section from "../SectionBadge";
 import styles from "./styles.module.css";
 
 const ExperienceSection = () => {
