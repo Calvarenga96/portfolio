@@ -33,8 +33,8 @@ const ExperienceSection = () => {
             {lang === "en" ? "projects " : "proyectos"}
           </LinkRouter>
           {lang === "en"
-            ? "section), after having learned for a long time the basics with HTML, CSS and JavaScript, starting with a calculator using OOP. After that, I started working on several real front-end projects creating landing pages like "
-            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript, comenzando con una calculadora usando POO. Después de eso, empecé a trabajar en varios proyectos reales de front-end creando landing pages como "}
+            ? "section), after having learned for a long time the basics with HTML, CSS and JavaScript. I started by creating a calculator usingOOP. After that, I started working on several real front-end projects creating landing pages like "
+            : "), después de haber aprendido durante mucho tiempo los fundamentos con HTML, CSS y JavaScript. Comencé creando una calculadora usando POO. Después de eso, empecé a trabajar en varios proyectos reales de front-end creando landing pages como "}
           <Link
             href="https://www.marketingeducativo.com/"
             isExternal={true}
@@ -59,14 +59,14 @@ const ExperienceSection = () => {
             cursosdemkt.com
           </Link>{" "}
           {lang === "en"
-            ? "using mainly React and its ecosystem but, they are closed source. While I was working on the landing pages, at the institute and online I was learning about PHP and SQL for the backend which is also in the "
-            : "utilizando principalmente React y su ecosistema pero, son de código cerrado. Mientras trabajaba en landing pages, el instituto y en línea estaba aprendiendo sobre PHP y SQL para el backend que también está en la sección de "}
+            ? ", using mainly React and its ecosystem but, these projects are private code. While working on these landing pages, in the institute of my city and on the internet through online courses, I was learning about PHP and SQL for the backend, which is also in the "
+            : ", utilizando principalmente React y su ecosistema pero, estos proyectos son de código privado. Mientras trabajaba en estas landing pages, en el instituto de mi ciudad y en internet a través de cursos online, estaba aprendiendo sobre PHP y SQL para el backend, que también está en la sección de "}
           <LinkRouter to="/projects" className={styles.link}>
             {lang === "en" ? "projects " : "proyectos. "}
           </LinkRouter>
           {lang === "en"
-            ? "section. I also started studying the Laravel framework for PHP."
-            : "También empecé a estudiar el framework Laravel para PHP"}
+            ? "section. I also started studying the Laravel framework for PHP in the same year."
+            : "También comencé a estudiar el framework Laravel para PHP en ese mismo año."}
         </Text>
       </Box>
 
