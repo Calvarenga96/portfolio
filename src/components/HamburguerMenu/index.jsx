@@ -11,6 +11,11 @@ const HamburgerMenu = () => {
       variant="outline"
       color="white"
       bg="transparent"
+      _hover={{
+        bg: "transparent",
+        color: "purpleColor.100",
+        borderColor: "purpleColor.100",
+      }}
     />
   );
 };

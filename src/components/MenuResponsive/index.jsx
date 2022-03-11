@@ -17,6 +17,7 @@ const MenuResponsive = () => {
           px="0"
           pt="0"
           pb={1}
+          _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Home" : "Inicio"}
         </MenuItem>
@@ -28,6 +29,7 @@ const MenuResponsive = () => {
           px="0"
           pt="0"
           pb={1}
+          _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Experience" : "Experiencia"}
         </MenuItem>
@@ -39,6 +41,7 @@ const MenuResponsive = () => {
           px="0"
           pt="0"
           pb={1}
+          _hover={{ bg: "backgroundColorBody", color: "purpleColor.100" }}
         >
           {lang === "en" ? "Projects" : "Proyectos"}
         </MenuItem>
