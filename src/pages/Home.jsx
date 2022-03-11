@@ -10,7 +10,7 @@ const Home = () => {
   const { lang } = useContext(DataContext);
 
   return (
-    <VStack>
+    <VStack w="100vw">
       <Helmet>
         <meta
           name="description"

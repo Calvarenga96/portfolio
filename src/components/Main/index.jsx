@@ -7,7 +7,7 @@ import StaticSection from "../StaticSection";
 
 const Main = () => {
   return (
-    <Container as="main">
+    <Container as="main" w="100vw">
       <StaticSection />
       <Routes>
         <Route path="/" element={<AboutMeSection />} />
