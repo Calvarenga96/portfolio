@@ -27,7 +27,7 @@ const RRSS = ({ responsive }) => {
           _hover={{ color: "purpleColor.100" }}
           isExternal={true}
         >
-          <FaGithubSquare size={!responsive ? "1.5rem" : "2.5rem"} />
+          <FaGithubSquare size={!responsive ? "1.5rem" : "2rem"} />
         </Link>
       </Tooltip>
       <Tooltip
@@ -45,7 +45,7 @@ const RRSS = ({ responsive }) => {
           _hover={{ color: "purpleColor.100" }}
           isExternal={true}
         >
-          <FaLinkedin size={!responsive ? "1.5rem" : "2.5rem"} />
+          <FaLinkedin size={!responsive ? "1.5rem" : "2rem"} />
         </Link>
       </Tooltip>
     </Box>

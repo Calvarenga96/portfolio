@@ -18,7 +18,7 @@ const Language = ({ responsive }) => {
         _hover={{ color: "purpleColor.100" }}
       >
         <Box display="flex" alignItems="center">
-          <IoLanguage size={responsive ? 30 : 20} />
+          <IoLanguage size={responsive ? "2rem" : "1.5rem"} />
         </Box>
       </MenuButton>
       <MenuList

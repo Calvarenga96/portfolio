@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Box
       as="header"
-      w="100%"
+      w="100vw"
       h="65px"
       position="fixed"
       bgColor="backgroundColorHeader"

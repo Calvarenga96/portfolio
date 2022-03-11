@@ -1,19 +1,17 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Flex } from "@chakra-ui/react";
+import { IconButton, MenuButton } from "@chakra-ui/react";
 
 const HamburgerMenu = () => {
   return (
-    <Flex
-      p={2}
-      justifyContent="center"
-      alignItems="center"
-      rounded="lg"
-      bgColor="transparent"
-      border="1px"
-      borderColor="whiteColor"
-    >
-      <HamburgerIcon w={4} h={4} color="white" />
-    </Flex>
+    <MenuButton
+      size="sm"
+      as={IconButton}
+      aria-label="Options"
+      icon={<HamburgerIcon />}
+      variant="outline"
+      color="white"
+      bg="transparent"
+    />
   );
 };
 

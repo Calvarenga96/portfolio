@@ -1,18 +1,13 @@
-import { Box } from "@chakra-ui/react";
-import useModal from "../../hooks/useModal";
+import { Menu } from "@chakra-ui/react";
 import HamburguerMenu from "../HamburguerMenu";
-import MenuModal from "../MenuModal";
+import MenuResponsive from "../MenuResponsive";
 
 const ResponsiveNavbar = () => {
-  const { handleClick, openModal } = useModal();
-
   return (
-    <Box>
-      <Box onClick={handleClick}>
-        <HamburguerMenu />
-      </Box>
-      {openModal && <MenuModal />}
-    </Box>
+    <Menu autoSelect={false} isLazy>
+      <HamburguerMenu />
+      <MenuResponsive />
+    </Menu>
   );
 };
 
