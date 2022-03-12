@@ -40,6 +40,7 @@ const ProjectsSection = () => {
             "React Helmet",
             "Framer Motion",
             "React Icons",
+            "Vite",
           ]}
         />
         {responsive && (
