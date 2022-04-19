@@ -76,8 +76,16 @@ const ExperienceSection = () => {
         </Kbd>
         <Text color="whiteColor" pl={3}>
           {lang === "en"
-            ? "Almost at the beginning of the year, I had finished another project using technologies like Jquery for the Front-End and PHP and SQL for the Back-End. Very soon, I will start my more in depth incursion with Laravel, creating a project of my own, which will be public in my GitHub repository."
-            : "Casi a comienzo de año, había terminado otro proyecto utilizando tecnologías como Jquery para el Front-End y PHP y SQL para el Back-End. Muy pronto, comenzaré mi incursión más a profundidad con Laravel, creando un proyecto propio, el cuál estará siendo público en mi repositorio de GitHub."}
+            ? "Almost at the beginning of the year, I had finished another project using technologies like Jquery for the Front-End and PHP and SQL for the Back-End. Very soon, I will start my more in depth incursion with Laravel, creating a project of my own, which will be public in my GitHub repository. In April, I started working at a startup in my country called "
+            : "Casi a comienzo de año, había terminado otro proyecto utilizando tecnologías como Jquery para el Front-End y PHP y SQL para el Back-End. Muy pronto, comenzaré mi incursión más a profundidad con Laravel, creando un proyecto propio, el cuál estará siendo público en mi repositorio de GitHub. En abril, comencé a trabajar en una startup de mi país llamada "}
+          <Link
+            href="https://www.monchis.com.py"
+            isExternal={true}
+            color="turquoiseColor.100"
+          >
+            Monchis
+          </Link>
+          .
         </Text>
       </Box>
     </AnimatedBox>
