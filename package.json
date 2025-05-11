@@ -10,17 +10,17 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.5",
-    "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/react": "^2.9.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.6.0",
-    "@react-three/drei": "^8.20.2",
+    "@react-three/drei": "^9.69.3",
     "@react-three/fiber": "^7.0.29",
     "framer-motion": "^6.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.0",
     "three": "^0.138.0"
   },
   "devDependencies": {
